@@ -1,0 +1,88 @@
+Q.1] Consider a numeric vector x <- c(3,4,5,6,7,8)
+• Write a command to recode the values less than 6 with zero in the vector x.
+• Write a command to recode the values between 4 and 8 with 100.
+• Write a command to recode the values that are less than 5 or greater than 6 with 50 .
+• Write a command to recode the values less than 6 with NA in the vector x.
+• Write a command to recode the values between 4 and 8 with NA.
+• Write a command to recode the values that are less than 5 or greater than 6 with NA.
+• Count number of NA values after each operation .
+• Find mean of x (Hint: exclude NA values).
+• Find median of x (Hint: exclude NA values).
+• Write a command to recode the values less than 6 with “NA” (enclose NA with double quotes) in the vector x.
+• Write a command to recode the values between 4 and 8 with “NA” .
+• Write a command to recode the values that are less than 5 or greater than 6 with “NA”
+• Count number of NA values after each operation.
+• Find mean of x (Hint: exclude NA values).
+• Find median of x (Hint: exclude NA values).
+• What is the difference between NA and “NA”?
+
+Q.2] Consider the dataset airquality
+[1] Print the dataset airquality
+[2] Print the structure of the dataset airquality
+[3] Print the summary of all the variables of the dataset airquality (Hint: Use function summary())
+[4] How many of the variables (columns) are in the dataset airquality ?
+[5] How many observations (rows) are in the dataset airquality?
+[6] What are the values getting displayed when we use summary() function?
+[7] What is quartile & how to find them ?
+[8] What are 1st and 3rd quartiles ?
+[9] Copy the dataset airquality to aq (Better work on a copy of original data instead of working on original data to avoid the loss of information)
+[10] Print the dataset aq
+[11] Print the structure of the dataset aq
+[12] Print the summary of all the variables of the dataset aq (Hint: Use function summary())
+[13] Print top 6 observations
+[14] Print last 6 observations
+[15] Replace the NA values in the attribute Ozone in aq by zero
+[16] Print the summary of all the variables of the dataset aq
+[17] Replace the NA values in the attribute Ozone in aq by mean of the remaining values
+[18] Print the summary of the dataset aq
+[19] Copy the dataset airquality to aq1. Replace the NA values in the attribute Ozone in aq1 by median of the remaining values. Print the summary of the dataset aq1
+[20] Copy the dataset airquality to aq2. Replace the NA values in the attribute Ozone in aq2 by mode of the remaining values. Print the summary of the dataset aq2
+[21] Repeat the above five operations for the attribute Solar.R
+[22] Replace all the values of Temp with global constant 50 in aq1
+[23] Replace all the values below 60 of Temp with global constant 60 in aq2
+[24] Replace the month numbers in the column Month in aq by name of the month. (Ex: Replace 5 with May). 
+    (Hint: use gsub() function. aq$Month <- gsub(5,"May",aq$Month))
+[25] Create a new logical attribute Solar.Danger in aq by filling it’s value with TRUE if the value in the attribute Solar.R is greater than 100, other with FALSE. 
+[26] Discretize the values in Temp of aq to “Low”, “Medium” and “High”
+[27] What does cut() function do?
+[28] Create a numeric vector brks containing values 0, 50, 100, 200, 250, 300 and 350. Divide the range of Solar.Rinto intervals and recode the values in Solar.R according to which interval they fall using the vector brks.
+     aq$Solar.R=cut(aq$Solar.R,breaks=brks,include.lowest=TRUE)
+
+Q.3] Create the dataframes to merge:
+[1] buildings <- data.frame(location=c(1, 2, 3), name=c("building1", "building2", "building3"))
+[2] data <- data.frame(survey=c(1,1,1,2,2,2), location=c(1,2,3,2,3,1), efficiency=c(51,64,70,71,80,58))
+[3] The dataframes, buildings and data have a common key variable called, “location”. Use the merge() function to merge the two dataframes by “location”, into a new dataframe, “buildingStats”.
+
+Q.4] Give the dataframes different key variable names:
+     buildings <- data.frame(location=c(1, 2, 3), name=c("building1", "building2", "building3"))
+     data <- data.frame(survey=c(1,1,1,2,2,2), LocationID=c(1,2,3,2,3,1), efficiency=c(51,64,70,71,80,58))
+The dataframes, buildings and data now have corresponding variables called, location, and LocationID. Use the merge() function to merge the columns of the two dataframes by the corresponding variables.
+
+Q.5] Consider the following dataframes:-
+# Employees dataset
+employees <- data.frame(
+EmployeeID = c(1, 2, 3, 4, 5),
+Name = c("John", "Jane", "Alice", "Bob", "Eva"),
+Age = c(25, 30, 35, 28, 32),
+DepartmentID = c(101, 102, 101, 103, 102)
+)
+# Departments dataset
+departments <- data.frame(
+DepartmentID = c(101, 102, 103, 104),
+DepartmentName = c("HR", "Marketing", "Finance", "IT")
+)
+Perform innerjoin and outer join.
+
+Q.6] Consider the following dataframes
+# Orders dataset
+orders <- data.frame(
+OrderID = c(1, 2, 3, 4, 5),
+CustomerID = c(101, 102, 103, 101, 104),
+Amount = c(100, 200, 150, 300, 250)
+)
+# Customers dataset
+customers <- data.frame(
+CustomerID = c(101, 102, 103, 104, 105),
+CustomerName = c("John", "Jane", "Alice", "Bob", "Eva")
+)
+Perform left join, right join and cross join. 
