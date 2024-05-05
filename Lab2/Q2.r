@@ -1,7 +1,3 @@
-# Write a program in R to check whether a number is prime or not. 
-# Sample Output:
-# Input a number to check prime or not: 13
-# The entered number is a prime number.
 is_prime <- function(num) {
 if (num <= 1) {
 return(FALSE)
