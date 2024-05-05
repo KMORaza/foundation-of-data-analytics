@@ -1,0 +1,82 @@
+Q1. Create a vector as x <- c(9:20, 1:5, 3:7, 0:8)
+1] Use duplicated() function to print the logical
+vector indicating the duplicate values present in x
+2] Observe the output of duplicated(x, fromLast = TRUE)
+3] What is the difference between duplicated(x) and duplicated(x,fromLast=TRUE)?
+4] Extract duplicate elements from x
+5] Extract unique elements from x
+6] Print duplicate elements from x in different
+order (Hint: Use duplicated(x, fromLast = TRUE))
+7] Extract unique elements from x in different order
+(Hint: Use duplicated(x, fromLast = TRUE))
+8] Print the indices of duplicate elements
+9] Print the indices of unique elements
+10] How many unique elements are in x?
+11] How many duplicate elements are in x?
+
+Q.2 Create a dataframe df :
+a <- c(rep("A", 3), rep("B", 3), rep("C",2)) b <- c(1,1,2,4,1,1,2,2)
+df <-data.frame(a,b)
+1] Use duplicated() function to print the logical
+vector indicating the duplicate values present in dataframe “df”
+2] Extract duplicate elements from dataframe “df”
+3] Extract unique elements from dataframe “df”
+4] Print the indices of duplicate elements
+5] Print the indices of unique elements
+6] How many unique elements are in dataframe "df"
+7] How many duplicate elements are in dataframe "df"
+
+Q.3 Consider a dataset Fisher’s Iris Dataset
+1] Print the dataset iris
+2] Print the structure of the dataset iris
+3] Print the summary of all the variables of
+the dataset iris (Hint: Use function summary())
+4] How many of the variables (columns) are in the dataset iris?
+5] How many observations (rows) are in the dataset iris?
+6] Use duplicated() function to print the logical
+vector indicating the duplicate values present in the dataset iris
+7] Extract duplicate elements from the dataset iris
+8] Extract unique elements from the dataset iris
+9] Print the indices of duplicate elements in the dataset iris
+10] Print the indices of unique elements in the dataset iris
+11] How many unique elements are in the dataset iris?
+12] How many duplicate elements are in the dataset iris?
+
+Q.4 Consider a vector x <-c(1,5,9,67,NA,32,NA,NA,12)
+1] Check for missing values using is.na() and completecases()
+2] Count missing values as sum, colSums functions
+3] Handling missing values using omit, replace with
+0 and replace with previous element and mean, median, Sum values
+
+Q.5 Create a dataframe with missing values
+df <- data.frame(
+ID = c(1, 2, 3, NA, 5),
+Name = c("John", "Alice", NA, "Bob", "Jane")
+)
+1] Check for missing values using is.na( ) and completecases()
+2] Count missing values as sum, colSums functions
+3] Handling missing values using omit, replace with
+0 and replace with previous element and mean, median, Sum values.
+
+Q.6 Consider a dataset airquality
+1] Print the dataset airquality
+2] Print the structure of the dataset airquality
+3] Print the summary of all the variables of the dataset airquality (Hint: Use
+function summary())
+4] How many of the variables (columns) are in the dataset airquality
+5] How many observations (rows) are in the dataset airquality
+6] Use the function is.na() to find whether any missing values are in the dataset
+airquality
+7] Print the indices of the missing values in the dataset airquality in column major
+representation
+8] Print the indices of the missing values in the dataset airquality in row major
+representation
+9] Print indices of the missing values in row and column numberwise (Hint: Use
+function which() and argument arr.ind = TRUE)
+10] How many missing values are in the dataset airquality?
+11] Which variables are the missing values concentrated in?
+12] How would you omit all rows containing missing values?
+13] Print the records without missing values in the dataset airquality using the function complete.cases()
+14] Print the records without missing values in the dataset airquality using the function na.omit()
+15] Print the records without missing values in the dataset airquality using the function na.exclude()
+16] Print the records containing missing values in the dataset airquality using the function complete.cases()
