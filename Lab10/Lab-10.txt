@@ -1,0 +1,51 @@
+Q1] Consider the following NumPy array: 
+import numpy as np 
+arr = np.array([1, 2, 3, 4, 5, 6]) 
+1. NumPy Array Attributes: 
+   a) Determine the shape and size of the array `arr` using the appropriate NumPy array attributes. 
+   b) Change the dtype of the array `arr` to float and explain the purpose of the dtype attribute in a NumPy array. 
+2. Array Indexing: Accessing Single Elements: 
+   a) Access and print the third element of the array `arr`. 
+   b) Update the value of the fourth element in the array `arr` to 10. 
+   c) Access and print a sub-array containing the first three elements of the array `arr`. 
+   d) Using negative indexing, access and print the last element of the array `arr`.
+
+Q2] Consider the following NumPy array: 
+import numpy as np 
+arr = np.array([[1, 2, 3, 4], 
+                [5, 6, 7, 8], 
+                [9, 10, 11, 12]]) 
+1. Array Slicing: Accessing Subarrays: 
+   a) Access and print the subarray consisting of the first two rows of the array `arr`. 
+   b) Access and print the subarray consisting of the last two columns of the array `arr`. 
+   c) Access and print a subarray consisting of the elements in the second row, starting from the second column, up to and including the third column. 
+2. Reshaping of Arrays: 
+   a) Reshape the array `arr` into a 2x6 array. Print the reshaped array and explain the result. 
+   b) Reshape the array `arr` into a 1D array. Print the reshaped array and discuss the purpose of reshaping arrays.
+
+Q3] Consider the following NumPy arrays: 
+import numpy as np 
+arr1 = np.array([1, 2, 3]) 
+arr2 = np.array([4, 5, 6]) 
+1. Array Concatenation and Splitting: 
+   a) Concatenate `arr1` and `arr2` horizontally (column-wise) and print the result. 
+   b) Concatenate `arr1` and `arr2` vertically (row-wise) and print the result. 
+   c) Split the array `arr1` into three equal-sized subarrays. Print the resulting subarrays. 
+   d) Split the array `arr2` at indices 1 and 2. Print the resulting subarrays. 
+2. Aggregations: 
+   a) Calculate and print the sum of all elements in `arr1` and `arr2`. 
+   b) Find and print the minimum and maximum values in `arr1` and `arr2`. 
+   c) Calculate and print the mean and standard deviation of `arr1` and `arr2`.
+
+Q4] Consider the following NumPy structured array: 
+import numpy as np 
+data = np.array([(1, 2.5, 'A'), (2, 3.6, 'B'), (3, 4.7, 'C')], 
+dtype=[('ID', int), ('Value', float), ('Category', 'U1')]) 
+1. Computations on Arrays: 
+   a) Compute the square of the 'Value' column in the structured array and assign it to a new variable. Print the new array. 
+   b) Calculate the mean of the 'ID' column in the structured array. Print the result. 
+   c) Perform element-wise multiplication of the 'ID' column with the 'Value' column and store the result in a new array. Print the new array. 
+2. NumPy's Structured Arrays: 
+   a) Access and print the value in the second row of the 'Category' column. 
+   b) Update the value in the third row of the 'Value' column to 5.2. Print the modified array to verify the change. 
+   c) Sort the structured array based on the 'ID' column in ascending order. Print the sorted array.
