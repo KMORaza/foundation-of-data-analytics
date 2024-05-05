@@ -1,16 +1,16 @@
-# Load the mtcars dataset
-data(mtcars)
-# 1. Boxplot for 'mpg'
-boxplot(mpg ~ NULL, data = mtcars, main = "Distribution of MPG")
-# 2. Histogram for 'hp'
-hist(mtcars$hp, main = "Frequency Distribution of Horsepower", xlab = "Horsepower")
-# 3. Pie chart for 'cyl'
-cyl_counts <- table(mtcars$cyl)
-pie(cyl_counts, main = "Proportion of Car Cylinders", labels = paste(names(cyl_counts), "cyl"), col = rainbow(length(cyl_counts)))
-# 4. Line graph for 'wt' across car models
-plot(mtcars$wt, type = "l", main = "Trend of Weight Across Car Models", xlab = "Car Models", ylab = "Weight")
-# 5. Scatter plot for 'mpg' vs 'hp'
-plot(mpg ~ hp, data = mtcars, main = "Relationship between MPG and HP", xlab = "Horsepower", ylab = "Miles per Gallon")
-# 6. Bar plot for average 'mpg' values across car models
-avg_mpg <- tapply(mtcars$mpg, mtcars$car, mean)
-barplot(avg_mpg, main = "Average MPG for Different Car Models", xlab = "Car Models", ylab = "Average MPG")
+# Load the airquality dataset
+data(airquality)
+# 1. Boxplot for ozone levels
+boxplot(airquality$Ozone, main="Distribution of Ozone Levels", ylab="Ozone")
+# 2. Histogram for temperature
+hist(airquality$Temp, main="Frequency Distribution of Temperature", xlab="Temperature")
+# 3. Pie chart for wind directions
+wind_direction_counts <- table(airquality$Wind)
+pie(wind_direction_counts, main="Proportion of Wind Directions", labels=names(wind_direction_counts))
+# 4. Line graph for solar radiation over time
+plot(airquality$Solar.R, type="l", main="Solar Radiation Over Time", xlab="Day", ylab="Solar Radiation")
+# 5. Scatter plot for ozone levels and wind speeds
+plot(airquality$Wind.Speed, airquality$Ozone, main="Relationship between Ozone Levels and Wind Speed", xlab="Wind Speed", ylab="Ozone Levels")
+# 6. Bar plot for average temperatures by month
+average_temps <- tapply(airquality$Temp, as.factor(airquality$Month), mean)
+barplot(average_temps, main="Average Temperatures by Month", xlab="Month", ylab="Average Temperature", names.arg=c("May", "June", "July", "August", "September"))
