@@ -1,0 +1,46 @@
+1] Create a numeric vector with elements 1, 3, 5, 7, 9 and assign it to a variable named "numbers". Access the second element of the vector "numbers" created in the previous question.
+2] Create a vector "prices" with elements 10, 15, 20, 25, 30 and a vector "quantities" with elements 2, 4, 6, 8, 10. Calculate the total cost by multiplying the corresponding elements of both vectors.
+3] Concatenate the vectors "vector1" and "vector2" to create a new vector named "combined_vector". Calculate the length of the vector "combined_vector".
+4] Create a vector "grades" with elements "A", "B", "C", "D", "E" and convert it to a factor. Check if the value "B" is present in the vector "grades" created in the previous question.
+5] Create a vector "numbers" with elements 2, 4, 6, 8, 10. Square each element of the vector and store the result in a new vector named "squared_numbers".
+6] Create a vector "temperatures" with elements 25, 30, 28, 32, 29. Find the maximum temperature from the vector.
+7] Create a logical vector "logical_vector" with elements TRUE, FALSE, TRUE, TRUE. Check if all the elements in the vector are TRUE.
+8] Create a vector "ages" with elements 20, 25, 30, 35, 40. Find the average age from the vector.
+9] Create a character vector "fruits" with elements "apple", "banana", "orange", "grape", "mango". Sort the vector in alphabetical order.
+10] Create a numeric vector "numbers" with elements 3, 7, 2, 5, 9. Find the sum of the vector. 
+11] Create a vector "names" with elements "John", "Jane", "James", "Julia". Extract the first two elements of the vector.
+12] Create a numeric vector "numbers" with elements 1, 2, 3, 4, 5. Add 1 to each element of the vector.
+13] Create a numeric vector with all integers from 5 to 107.
+14] Create a vector that contain all numbers from 1 to 17, where each number occurs the the same number of times as the number itself eg. 1, 2, 2, 3, 3, 3...
+15] Create two numeric vectors of length 4 and test run all the basic operators (as seen in the table earlier) with these two as arguments.
+
+MATRICES
+(1) If M=matrix(c(1:10),nrow=5,ncol=2, dimnames=list(c('a','b','c','d','e'),c('A','B')))
+What is the value of: M ?
+Consider the matrix M, What is the value of: M[1,], M[,1], M[3,2], M['e','A'] ?
+(2) Consider the matrix N
+N=matrix(c(1:9),nrow=3,ncol=3, dimnames=list(c('a','b','c'),c('A','B','C')))
+What is the value of: diag(N) ?
+What is the value of: diag(4,3,3) ?
+(3) If M=matrix(c(1:9),3,3,byrow=T, dimnames=list(c('a','b','c'),c('d','e','f'))) What is the value of: rownames(M) and colnames(M)
+(4) What is the value of: upper.tri(M), lower.tri(M), lower.tri(M,diag=T) ?
+(5) Consider two matrix, M,N M=matrix(c(1:9),3,3,byrow=T) N=matrix(c(1:9),3,3)
+What is the value of: M*N?
+(6) Consider two matrix, M, N M=matrix(c(1:9),3,3,byrow=T) N=matrix(c(1:9),3,3)
+What is the value of: M%*%N ?
+(7) Consider two matrix, M,N M=matrix(c(1:9),3,3,byrow=T) N=matrix(c(1:9),3,3)
+What is the value of: (M+N)^2 ?
+(8) Consider two matrix, M,N M=matrix(c(1:9),3,3,byrow=T) N=matrix(c(1:9),3,3)
+What is the value of: M/N ?
+(9) Create a matrix "mat" with 3 rows and 4 columns containing the following elements: 
+1 2 3 4
+5 6 7 8
+9 10 11 12
+
+DATAFRAME
+Create a data frame "df" with the following data:
+Name   Age   City
+--------------------
+John   25    London
+Emma   30    New York
+Mike   35    Paris
