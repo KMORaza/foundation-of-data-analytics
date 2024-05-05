@@ -1,0 +1,67 @@
+Q1] Consider a data frame "df" with the following columns: "Name", "Age", "Gender", "Height", "Weight", "Grade". 
+df <- data.frame( 
+ Name = c("Alice", "Bob", "John", "Jane"), 
+ Age = c(25, 30, 35, 40), 
+ Gender = c("Female", "Male", "Male", "Female"), 
+ Height = c(165, 180, 175, 160), 
+ Weight = c(60, 75, 70, 55), 
+ Grade = c("A", "B", "B", "A+") 
+) 
+1. Use the select() function in R to create a new data frame called "df_select" that 
+includes only the "Name" and "Age" columns from the original data frame. 
+2. Use the select() function to create a new data frame called "df_exclude" that 
+excludes the "Height" and "Weight" columns from the original data frame. 
+3. Use the select() function to create a new data frame called "df_rename" that 
+renames the "Grade" column to "Achievement" in the original data frame. 
+4. Use the select() function to create a new data frame called "df_reorder" that 
+reorders the columns of the original data frame, with "Age" appearing before 
+"Gender".
+
+Q2] Consider a dataset "grades" with the following columns: "Name", "Subject", and "Score". 
+grades <- data.frame( 
+ Name = c("John", "Alice", "Bob", "Jane", "Michael", "Emma"), 
+ Subject = c("Math", "English", "Science", "Math", "English", "Science"), 
+ Score = c(85, 90, 78, 92, 88, 80) 
+) 
+Write R code to perform the following summarization tasks: 
+1. Calculate the average score for each subject. 
+2. Find the minimum score for each subject. 
+3. Determine the maximum score for each subject. 
+4. Compute the total number of records in the dataset. 
+5. Calculate the overall average score across all subjects. 
+6. Find the standard deviation of scores for each subject. 
+7. Calculate the median score for each subject. 
+8. Determine the sum of scores for each subject.
+
+Q3] Consider the following dataset "students" representing students' scores in different subjects: 
+students <- data.frame( 
+ Name = c("John", "Alice", "Bob", "Jane", "Michael", "Emma"), 
+ Subject = c("Math", "English", "Science", "Math", "English", "Science"), 
+ Score = c(85, 90, 78, 92, 88, 80) 
+) 
+1. Group the dataset by "Subject" and calculate the average score for each subject. 
+2. Group the dataset by "Subject" and calculate the maximum score for each subject. 
+3. Group the dataset by "Subject" and calculate the minimum score for each subject. 
+4. Group the dataset by "Subject" and calculate the total number of students in each subject. 
+5. Group the dataset by "Subject" and calculate the standard deviation of scores for each subject. 
+For each question, write the necessary R code using the group_by() function and appropriate summarization functions such as mean(), max(), min(), n(), and sd().
+
+Q4] Consider the following dataset "students" representing students' information 
+1. Filter the dataset to select students who are older than 20 years. 
+2. Filter the dataset to select students who have a grade of "A". 
+3. Filter the dataset to select students who have a GPA higher than 3.5. 
+4. Filter the dataset to select students who are older than 20 years and have a grade of "A". 
+5. Filter the dataset to select students who have a GPA higher than 3.5 or are younger than 19 years. 
+For each question, write the necessary R code using the filter() function and use appropriate conditions using comparison operators such as <, >, ==, and logical operators such as & (AND) and | (OR).
+
+Q5] Consider the following dataset "students" representing students' information: 
+students <- data.frame( 
+ Name = c("John", "Alice", "Bob", "Jane"), 
+ Age = c(18, 20, 19, 21), 
+ Grade = c("A", "B", "B", "A"), 
+ GPA = c(3.8, 3.2, 3.5, 3.9) 
+) 
+1. Use the mutate() function to add a new column called "Age_Group" to the dataset, which categorizes the students into different age groups: "Teenagers" (age <= 19) and "Young Adults" (age > 19). 
+2. Use the mutate() function to calculate a new column called "GPA_Scaled" that scales the GPA values to a 100-point scale, where the maximum GPA in the dataset corresponds to 100. 
+3. Use the rename() function to rename the column "Grade" to "Letter_Grade" in the dataset. 
+For each question, write the necessary R code using the mutate() and rename() functions to perform the desired operations on the "students" dataset.
