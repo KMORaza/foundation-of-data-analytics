@@ -1,0 +1,167 @@
+1] Write a program in R to find the perfect numbers between 1 and 500. 
+The perfect numbers between 1 to 500 are:
+6
+28
+496
+
+2] Write a program in R to check whether a number is prime or not. 
+Sample Output:
+Input a number to check prime or not: 13
+The entered number is a prime number.
+
+3] Write a program in R to find prime number within a range. 
+Input number for starting range: 1
+Input number for ending range: 100
+The prime numbers between 1 and 100 are: 2 3 5 7 11 13 17 19 23 29 31 37 41 43 47 53 59 61 67 71 73 79 83 89 97
+The total number of prime numbers between 1 to 100 is: 25
+
+4] Write a program in R to find the factorial of a number. 
+Sample output:
+Input a number to find the factorial: 5
+The factorial of the given number is: 120
+
+5] Write a program in R to find the Greatest Common Divisor (GCD) of two numbers.
+Sample Output:
+Input the first number: 25
+Input the second number: 15
+The Greatest Common Divisor is: 5
+
+6] Write a program in R to find the sum of digits of a given number. 
+Sample Output:
+Input a number: 1234
+The sum of digits of 1234 is: 10
+
+7] Write a program in R to list non-prime numbers from 1 to an upper bound.
+Sample Output:
+Input the upper limit: 25
+
+8] Write a program in R to print a square pattern with # character.
+Sample Output:
+Print a pattern like square with # character: --------------------------------------------------
+Input the number of characters for a side: 4
+####
+####
+####
+####
+
+9] Write a program in R to display the cube of the number upto given integer.
+Sample Output:
+Input the number of terms : 5
+Number is : 1 and the cube of 1 is: 1
+Number is : 2 and the cube of 2 is: 8
+Number is : 3 and the cube of 3 is: 27
+Number is : 4 and the cube of 4 is: 64
+Number is : 5 and the cube of 5 is: 125
+
+10] Write a program in R to display the first n terms of the Fibonacci series.
+Sample Output:
+Input number of terms to display: 10
+Here is the Fibonacci series upto to 10 terms: 0 1 1 2 3 5 8 13 21 34
+
+11] Write a program in R to display the number in reverse order.
+Sample Output:
+Input a number: 12345
+The number in reverse order is : 54321
+
+12] Write a program in R to find out the sum of an A.P. series.
+Sample Output:
+Input the starting number of the A.P. series: 1
+Input the number of items for the A.P. series: 8
+Input the common difference of A.P. series: 5
+The Sum of the A.P. series are : 1 + 6 + 11 + 16 + 21 + 26 + 31 + 36 = 148
+
+13] Write a program in R to check whether a number can be expressed as the sum of two Prime Numbers.
+Sample Output:
+Input a positive integer: 20
+20 = 3 + 17
+20 = 7 + 13
+
+14] Write a program in R to find the length of a string without using the library function.
+Sample Output:
+Input a string: w3resource.com
+The string contains 14 numbers of characters.
+So, the length of the string w3resource.com is:14
+
+15] Write a program in R to display the pattern like a right angle triangle using an asterisk.
+Sample Output:
+Input number of rows: 5
+*
+**
+***
+****
+*****
+
+16] Write a program in R to display the pattern like right angle triangle with number.
+Sample Output:
+Input number of rows: 5
+1
+12
+123
+1234
+12345
+
+17] Write a program in R to make such a pattern like right angle triangle using number which will repeat the number for that row.
+Sample Output:
+Input number of rows: 5
+1
+22
+333
+4444
+55555
+
+18] Write a program in R to make such a pattern like a right angle triangle with the number increased by 1.
+Sample Output:
+Input number of rows: 4
+1
+23
+456
+78910
+
+19] Write a program in R to find the sum of the first and last digit of a number.
+Sample Output:
+Input any number: 12345
+The first digit of 12345 is: 1
+The last digit of 12345 is: 5
+The sum of first and last digit of 12345 is: 6
+
+20] Write a program in R to find the frequency of each digit in a given integer.
+Sample Output:
+Input any number: 122345
+The frequency of 0 = 0
+The frequency of 1 = 1
+The frequency of 2 = 2
+The frequency of 3 = 1
+The frequency of 4 = 1
+The frequency of 5 = 1
+The frequency of 6 = 0
+The frequency of 7 = 0
+The frequency of 8 = 0
+The frequency of 9 = 0
+
+21] Write a program in R to display the given number in words.
+Sample Output:
+Input any number: 8309
+Eight Three Zero Nine
+
+22] Write a program in R to enter any number and print all factors of the number.
+Sample Output:
+Input a number: 63
+The factors are: 1 3 7 9 21 63
+
+23] Write a program in R to find one's complement of a binary number.
+Sample Output:
+Input a 8 bit binary value: 10100101
+The original binary = 10100101
+After ones complement the number = 01011010
+
+24] Write a program in R to find two's complement of a binary number.
+Sample Output:
+Input a 8 bit binary value: 01101110
+The original binary = 01101110
+After one's complement the value = 10010001
+After two's complement the value = 10010010
+
+25] Write a program in R to convert a decimal number to a binary number.
+Sample Output:
+Input a decimal number: 35
+The binary number is: 100011
