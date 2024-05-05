@@ -1,0 +1,77 @@
+Q.1] Consider the data set “airquality”. 
+Read first 6 lines into a new data frame “aq” (aq <- head(airquality)) and perform the following operations. 
+Perform the following operations using the read.table and write.table functions in R: 
+1. Write the data frame "aq" to a tab-separated values (TSV) file called "data.txt". 
+2. Read the contents of " data.txt" using the read.table function and store it in a new data frame called "data_new". 
+3. Display the structure and contents of "data_new" to verify that it matches the original data frame.
+
+Q.2] Create a new file 
+Line 1: Hello, World! 
+Line 2: How are you? 
+Line 3: I'm doing great! 
+1. Write a new file called "output.txt" with the same content as above(line1,line2,line3) using writeLines. 
+2. Read the contents of "output.txt" using the readLines function and store it in a variable. 
+3. Display the contents of the variable to verify that it matches the original text.
+
+Q.3] Consider the following dataframe 
+students <- data.frame( 
+ Name = c("Alice", "Bob", "John", "Jane"), 
+ Age = c(25, 30, 35, 40), 
+ Grade = c("A", "B", "A", "B") 
+) 
+Perform the following operations using the read.delim and write.delim functions in R: 
+1. Write the data frame "students" to a tab-separated values (TSV) file called "students.tsv". 
+2. Read the contents of "students.tsv" using the read.delim function and store it in a new data frame called "students_new". 
+3. Display the structure and contents of "students_new" to verify that it matches the original data frame.
+
+Q.4] Consider the following dataframe 
+students <- data.frame( 
+ Name = c("John", "Jane", "Alice", "Bob"), 
+ Math = c(90, 85, 92, 88), 
+ Science = c(95, 88, 90, 94), 
+ English = c(80, 92, 85, 88) 
+) 
+Perform the following operations using the read.csv and write.csv functions in R: 
+1. Write the data frame "students" to a comma-separated values (CSV) file called "students_data.csv". 
+2. Read the contents of "students_data.csv" using the read.csv function and store it in a new data frame called "students_new". 
+3. Display the structure and contents of "students_new" to verify that it matches the original data frame.
+
+Q.5] Consider a data frame named "students" that contains information about students' 
+grades. The data frame has the following structure: 
+students <- data.frame( 
+ Name = c("John", "Jane", "Alice", "Bob"), 
+ Math = c(90, 85, 92, 88), 
+ Science = c(95, 88, 90, 94), 
+ English = c(80, 92, 85, 88) 
+) 
+Perform the following operations using the save and load functions in R: 
+1. Save the data frame "students" as a binary file called "students_data.RData". 
+2. Clear the current environment to remove the "students" data frame. 
+3. Load the "students_data.RData" file into the R environment. 
+4. Display the structure and contents of the loaded "students" data frame to verify that it matches the original data frame.
+
+Q.6] Create a file a text file named "sales.txt" that contains the monthly sales data for a company. Each line in the file represents the sales for a specific month. The file has the following format: 
+January,10000 
+February,15000 
+March,12000 
+April,18000 
+Perform the following operations using the scan function in R: 
+1. Read the "sales.txt" file and store the data in a vector. 
+2. Calculate the total sales for all the months. 
+3. Display the total sales.
+
+Q.7] Consider mtcars dataset Perform the following operations to visualize the data using different plot types: 
+1. Create a boxplot to visualize the distribution of the "mpg" variable (miles per gallon) in the "mtcars" dataset. 
+2. Generate a histogram to examine the frequency distribution of the "hp" variable (horsepower) in the dataset. 
+3. Create a pie chart to display the proportion of different car cylinders ("cyl") in the dataset. 
+4. Generate a line graph to visualize the trend of the "wt" variable (weight) across different car models. 
+5. Create a scatter plot to analyze the relationship between the "mpg" variable and the "hp" variable. 
+6. Generate a bar plot to compare the average "mpg" values for different car models.
+
+Q.8] Consider airquality dataset Perform the following operations to visualize the data using different plot types: 
+1. Create a boxplot to visualize the distribution of ozone levels ("Ozone") in the "airquality" dataset. 
+2. Generate a histogram to examine the frequency distribution of temperatures ("Temp") in the dataset. 
+3. Create a pie chart to display the proportion of different wind directions ("Wind") in the dataset. 
+4. Generate a line graph to visualize the variation of solar radiation ("Solar.R") over time. 
+5. Create a scatter plot to analyze the relationship between ozone levels ("Ozone") and wind speeds ("Wind.Speed"). 
+6. Generate a bar plot to compare the average temperatures ("Temp") for different months.
